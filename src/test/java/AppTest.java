@@ -7,6 +7,14 @@ import static org.junit.Assert.*;
 public class AppTest {
     @Test public void testAppHasAGreeting() {
         App classUnderTest = new App();
+        Mobile iphone = new Iphone("iphone", "black", "apple");
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
+        assertNotNull("app should have a greeting", iphone.makeCall("call"));
+    }
+
+    @Test
+    public void test() {
+        Mobile iphone = new Iphone("iphone", "black", "apple");
+        System.out.println(iphone.toString());
     }
 }
