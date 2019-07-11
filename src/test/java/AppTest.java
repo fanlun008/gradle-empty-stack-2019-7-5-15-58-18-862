@@ -14,7 +14,9 @@ public class AppTest {
 
     @Test
     public void test() {
-        Mobile iphone = new Iphone("iphone", "black", "apple");
-        System.out.println(iphone.toString());
+        Person person = new Person();
+        person.call(new Iphone("name", "color", "brand"), "jjjkkkkkkjjjj");
     }
+
+
 }

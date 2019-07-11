@@ -6,6 +6,10 @@ public class Mobile {
     private String color;
     private String brand;
 
+    private int limit;
+
+    public String errorMsg(){return null;}
+
     public Mobile(String name, String color, String brand) {
         this.name = name;
         this.color = color;
@@ -21,5 +25,9 @@ public class Mobile {
     public String toString() {
         return String.format("name: [%1$s], color: [%2$s], brand: [%3$s]",
                 this.name, this.color, this.brand);
+    }
+
+    public void mobilePrint(String msg) {
+
     }
 }
